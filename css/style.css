@@ -586,7 +586,7 @@ body {
   .popup__close:hover {
     color: #55c57a; }
   .popup__content {
-    width: 85%;
+    width: 90%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -597,13 +597,19 @@ body {
     display: table;
     overflow: hidden; }
   .popup__left {
-    width: 35%;
+    width: 40%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
-    width: 65%;
+    width: 60%;
     display: table-cell;
     vertical-align: middle;
-    padding: 3rem 5rem; }
+    padding: 3rem 2.5rem; }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        text-align: center; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -620,6 +626,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        column-count: 1; } }
 
 .footer {
   background-color: #333;
