@@ -31,3 +31,8 @@ body {
     padding: 0;
   }
 }
+// changes the highlight effect on text
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
